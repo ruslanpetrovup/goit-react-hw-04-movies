@@ -38,3 +38,10 @@ header {
 .navLick--active {
   color: aqua;
 }
+.titleAuthor {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.itemAuthor {
+  margin-bottom: 20px;
+}

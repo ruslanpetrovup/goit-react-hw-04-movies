@@ -21,7 +21,10 @@ class Home extends Component {
 
                 <ul>
                     {this.state.homelist.map((num) => {
-                        return (<li key={num.id}><Link to={`/movies/${num.id}`}>{num.title}</Link></li>)
+                        return (<li key={num.id}><Link to={{pathname: `/movies/${num.id}`,
+                            state: {
+                            from: {pathname: this.props.location.pathname}
+                        }}}>{num.title}</Link></li>)
                     })}
                 </ul>
             </>)
